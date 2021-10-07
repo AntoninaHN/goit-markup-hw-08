@@ -118,6 +118,8 @@ a {
   color: var(--title-text-color);
   text-decoration: none;
   transition: color 250ms var(--timing-function);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -480,6 +482,11 @@ footer {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+.email-foot-number:hover,
+.email-foot-number:focus {
+  color: var(--accent-color);
 }
 /* =====================END OF STUDIO===================== */
 
@@ -787,9 +794,7 @@ footer {
 .footer-address {
   flex-basis: calc((100% - 30px) / 2);
 }
-.social-links-footer {
-  flex-basis: calc((100% - 30px) / 2);
-}
+
 .title-footer {
   display: flex;
   margin-bottom: 20px;
