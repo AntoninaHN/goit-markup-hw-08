@@ -1,0 +1,112 @@
+.header {
+  /* top line bg */
+  color: var(--background-color);
+  border-bottom: 1px solid #ececec;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding-top: 24px;
+  margin-right: 93px;
+  padding-bottom: 25px;
+  line-height: 1.1;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.logo span {
+  color: var(--accent-color);
+  text-decoration: none;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+.nav-item {
+  position: relative;
+}
+.current {
+  color: var(--accent-color);
+}
+.current::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  bottom: -32px;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contact-list {
+  /* info@devstudio.com */
+  /* +38 096 111 11 11 */
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+/* .envelope-icon {
+  margin-right: 10px;
+  fill: currentColor;
+} */
+.contact-link {
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--timing-function);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contact-icon {
+  transition: fill 250ms var(--timing-function);
+}
+.contact-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+.contact-icon {
+  margin-right: 10px;
+}
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
+  fill: var(--accent-color);
+}
