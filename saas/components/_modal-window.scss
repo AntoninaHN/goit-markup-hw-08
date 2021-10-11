@@ -6,6 +6,36 @@
   appearance: none;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    height: 96vh;
+    overflow: auto;
+    padding: 40px 40px;
+  }
+}
+
+.modal-form-head {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
 .modal-form-head {
   font-family: Roboto;
   font-weight: 700;
