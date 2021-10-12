@@ -69,19 +69,19 @@
         <div class="container">
           <h1 class="visually-hidden">Примеры работ</h1>
           <ul class="buttons">
-            <li class="all-projects">
+            <li class="portfolio-btn">
               <button class="modal-button" type="button">Все</button>
             </li>
-            <li class="web-pages">
+            <li class="portfolio-btn">
               <button class="modal-button" type="button">Веб-сайты</button>
             </li>
-            <li class="app">
+            <li class="portfolio-btn">
               <button class="modal-button">Приложения</button>
             </li>
-            <li class="our-design">
+            <li class="portfolio-btn">
               <button class="modal-button" type="button">Дизайн</button>
             </li>
-            <li class="our-marketing">
+            <li class="portfolio-btn">
               <button class="modal-button" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -92,12 +92,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/laptop.jpg"
-                    alt="Портфолио"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-laptop.jpg   1x,
+                        ./images/projects/jpg/desk-laptop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-laptop.jpg   1x,
+                        ./images/projects/jpg/tablet-laptop2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-laptop.jpg   1x,
+                        ./images/projects/jpg/mobile-laptop2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-laptop.jpg"
+                      alt="Laptop"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -115,12 +142,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/poster.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-poster.jpg   1x,
+                        ./images/projects/jpg/desk-poster2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-poster.jpg   1x,
+                        ./images/projects/jpg/tablet-poster2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-poster.jpg   1x,
+                        ./images/projects/jpg/mobile-poster2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-poster.jpg"
+                      alt="Basketball Poster"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -137,12 +191,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/sesafood-restaurant.jpg"
-                    alt="Постер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-seafood-restaurant.jpg   1x,
+                        ./images/projects/jpg/desk-seafood-restaurant2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-seafood-restaurant.jpg   1x,
+                        ./images/projects/jpg/tablet-seafood-restaurant2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-seafood-restaurant.jpg   1x,
+                        ./images/projects/jpg/mobile-seafood-restaurant2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-seafood-restaurant.jpg"
+                      alt="Sefood Restaurant"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -159,12 +240,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/headphones.jpg"
-                    alt="Проэкт Прайм"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-headphones.jpg   1x,
+                        ./images/projects/jpg/desk-headphones2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-headphones.jpg   1x,
+                        ./images/projects/jpg/tablet-headphones2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-headphones.jpg   1x,
+                        ./images/projects/jpg/mobile-headphones2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-headphones.jpg"
+                      alt="Headphones"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -181,12 +289,40 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="Коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-boxes.jpg   1x,
+                        ./images/projects/jpg/desk-boxes2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-boxes.jpg   1x,
+                        ./images/projects/jpg/tablet-boxes2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-boxes.jpg   1x,
+                        ./images/projects/jpg/mobile-boxes2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-boxes.jpg"
+                      alt="Boxes"
+                    />
+                  </picture>
+
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -203,12 +339,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/inpiration-has-no-borders.jpg"
-                    alt="Нет границам"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-inspiration-has-no-borders.jpg   1x,
+                        ./images/projects/jpg/desk-inspiration-has-no-borders2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-inspiration-has-no-borders.jpg   1x,
+                        ./images/projects/jpg/tablet-inspiration-has-no-borders2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-inspiration-has-no-borders.jpg   1x,
+                        ./images/projects/jpg/mobile-inspiration-has-no-borders2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-inspiration-has-no-borders.jpg"
+                      alt="Boxes"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -225,12 +388,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/magazin.jpg"
-                    alt="Дизайн Inspiration has no boarders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-magazine.2x.jpg 1x,
+                        ./images/projects/jpg/desk-magazine2x.jpg  2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-magazine.jpg   1x,
+                        ./images/projects/jpg/tablet-magazine2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-magazine.jpg   1x,
+                        ./images/projects/jpg/mobile-magazine2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-magazine.jpg"
+                      alt="Magazine"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -247,12 +437,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/lab.jpg"
-                    alt=" LAB Проект"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-lab.jpg   1x,
+                        ./images/projects/jpg/desk-lab2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-lab.jpg 1x,
+                        ./images/projects/jpg/desk-lab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-lab.jpg   1x,
+                        ./images/projects/jpg/mobile-lab2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-lab.jpg"
+                      alt="Magazine"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -269,12 +486,39 @@
             <li class="works-item">
               <a href="" class="works-link">
                 <div class="img-overlay">
-                  <img
-                    src="./images/growing-business.jpg"
-                    alt="Растущий бизнес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/jpg/desk-growing-business.jpg   1x,
+                        ./images/projects/jpg/desk-growing-business2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/tablet-growing-business.jpg   1x,
+                        ./images/projects/jpg/tablet-growing-business2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/jpg/mobile-growing-business.jpg   1x,
+                        ./images/projects/jpg/mobile-growing-business2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="./images/projects/jpg/mobile-growing-business.jpg"
+                      alt="Magazine"
+                    />
+                  </picture>
                   <p class="overlay overlay-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
