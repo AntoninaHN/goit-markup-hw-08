@@ -26,14 +26,24 @@
   text-decoration: none;
   line-height: 1.1;
   font-weight: 700;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    text-align: left;
+  }
 }
+//nav/ul
 .site-nav {
-  display: flex;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
+//link
 .nav-link {
   font-family: Roboto;
   font-weight: 500;
@@ -50,6 +60,7 @@
 .nav-link:focus {
   color: var(--accent-color);
 }
+//a
 .nav-item {
   position: relative;
 }

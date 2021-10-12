@@ -2,11 +2,17 @@
 /* ============Form========= */
 .footer-subscribe {
   display: flex;
-  flex-direction: column;
+
   flex-basis: calc((100% - 30px) / 2);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
+
 .subscribe-text {
-  display: flex;
   margin-bottom: 20px;
   font-family: Roboto;
   font-weight: 700;
@@ -41,4 +47,17 @@ text {
   height: 24px;
   fill: #ffffff;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.submit-text-btn {
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
 }

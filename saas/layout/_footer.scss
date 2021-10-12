@@ -1,12 +1,15 @@
 /* ==============FOOTER============= */
 .footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .logo-footer {
-  /* WebStudio */
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -17,17 +20,20 @@
   display: inline-block;
   margin-bottom: 20px;
   font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .logo-footer span {
-  /* WebStudio */
   color: var(--accent-color);
   text-decoration: none;
-  font-style: 400;
+  font-style: normal;
 }
 
 .address {
-  display: flex;
   font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
@@ -36,6 +42,18 @@
   color: var(--background-color);
   text-decoration: none;
   font-style: normal;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    // margin-left: 30px;
+    display: flex;
+  }
+
+  @media screen and(max-width:767px) {
+    text-align: center;
+    text-decoration: none;
+  }
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -76,32 +94,36 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-left: 30px;
+    // margin-left: 30px;
     flex-wrap: nowrap;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 
 .footer-address {
+  margin-bottom: 60px;
   @media screen and (max-width: 768px) {
     text-align: center;
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
-    // margin-left: 30px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 30px;
+    // margin-left: 30px;
     flex-wrap: nowrap;
     flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+  @media screen and(max-width:767px) {
   }
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-
   @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-basis: calc(100% / 2);
     margin-bottom: 0;
   }
 }

@@ -4,22 +4,16 @@
   display: flex;
   flex-direction: column;
   appearance: none;
-}
 
-@media screen and (min-width: 768px) {
-  .modal {
+  @media screen and (min-width: 768px) {
     max-width: 450px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .modal {
+  @media screen and (min-width: 1200px) {
     max-width: 528px;
     max-height: 581px;
   }
-}
-@media screen and (min-width: 480px) {
-  .modal {
+  @media screen and (min-width: 480px) {
     height: 96vh;
     overflow: auto;
     padding: 40px 40px;

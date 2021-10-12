@@ -1,145 +1,91 @@
-@media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-  .tel-link {
-    display: none;
-  }
-  .header-modal-btn {
-    display: none;
-  }
-  .open-menu-btn,
-  .mobile-menu-close-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    line-height: 0;
-  }
-  .mobile-menu-close-btn {
-    position: absolute;
-    top: 48px;
-    right: 15px;
-  }
-  .mobile-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: bisque;
-    width: 100vw;
-    height: 100vh;
-    max-height: 796px;
-    overflow-y: scroll;
-    transform: translateY(-100%);
-    transition: transform 500ms linear;
-  }
-  .mobile-menu.is-open {
-    transform: translateY(0%);
-  }
-  .mobile-menu-container {
-    position: relative;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 41px;
-  }
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  padding: 48px 40px;
+  background-color: var(--background-color);
+  opacity: 1;
+  transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
 @media screen and (min-width: 768px) {
-  .open-menu-btn {
-    display: none;
-  }
-  .mobile-menu {
+  .burger-menu {
     display: none;
   }
 }
 
-// .burger-menu {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100vh;
-//   overflow: auto;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   z-index: 10;
-//   padding: 48px 40px;
-//   background-color: var(--background-color);
-//   opacity: 1;
-//   transition: opacity var(--timing-function), visibility var(--timing-function);
-// }
+.burger-menu-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
-// @media screen and (min-width: 768px) {
-//   .burger-menu {
-//     display: none;
-//   }
-// }
+.burger-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
 
-// .burger-menu-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
+.burger-menu-link {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color var(--timing-function);
+  color: #212121;
+}
 
-// .burger-menu-item:not(:last-child) {
-//   margin-bottom: 32px;
-// }
+.burger-menu-link:hover,
+.burger-menu-link:focus {
+  color: var(--accent-color);
+}
 
-// .burger-menu-link {
-//   font-size: 40px;
-//   line-height: 1.1;
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   transition: color var(--timing-function);
-//   color: #212121;
-// }
+.burger-menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: fill var(--timing-function);
+}
 
-// .burger-menu-link:hover,
-// .burger-menu-link:focus {
-//   color: var(--accent-color);
-// }
+.burger-menu-icon {
+  width: 18px;
+  height: 18px;
+}
 
-// .burger-menu-btn {
-//   position: absolute;
-//   top: 10px;
-//   right: 15px;
-//   width: 40px;
-//   height: 40px;
-//   outline: none;
-//   border: none;
-//   background-color: transparent;
-//   transition: fill var(--timing-function);
-// }
+.burger-menu-btn:hover .burger-menu-icon,
+.burger-menu-btn:focus .burger-menu-icon {
+  fill: var(--accent-color);
+}
 
-// .burger-menu-icon {
-//   width: 18px;
-//   height: 18px;
-// }
+.burger-menu-address {
+  margin-bottom: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+}
 
-// .burger-menu-btn:hover .burger-menu-icon,
-// .burger-menu-btn:focus .burger-menu-icon {
-//   fill: var(--accent-color);
-// }
+.burger-menu-tel {
+  font-size: 25px;
+  color: var(--accent-color);
+}
 
-// .burger-menu-address {
-//   margin-bottom: 64px;
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   line-height: 1.17;
-// }
+@media screen and (min-width: 480px) {
+  .burger-menu-tel {
+    font-size: 34px;
+  }
+}
 
-// .burger-menu-tel {
-//   font-size: 25px;
-//   color: var(--accent-color);
-// }
-
-// @media screen and (min-width: 480px) {
-//   .burger-menu-tel {
-//     font-size: 34px;
-//   }
-// }
-
-// .burger-menu-email {
-//   font-size: 24px;
-//   color: #212121;
-// }
+.burger-menu-email {
+  font-size: 24px;
+  color: #212121;
+}
