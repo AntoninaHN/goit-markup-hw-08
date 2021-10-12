@@ -1,6 +1,24 @@
 /* ===================WHAT WE DO=================== */
+.what-we-do-title {
+  display: none;
+
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
 .what-we-do {
   margin-bottom: 47px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 .our-job {
@@ -13,21 +31,9 @@
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
-}
-
-.what-we-do {
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
-.our-job-item {
   position: relative;
 }
+
 .text-overlay {
   position: absolute;
   left: 0;

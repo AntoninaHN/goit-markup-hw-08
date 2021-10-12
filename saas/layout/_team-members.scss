@@ -1,34 +1,39 @@
 /* ===================OUR TEAM=================== */
 
 .our-team {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
   background: #f5f4fa;
-  @media screen and (min-width: 768px) {
-    margin-left: -30px;
-  }
 }
 .team-item {
   background: #ffffff;
-  /* material shadow v1 */
-  // flex-basis: calc((100% - 120px) / 4);
-  // flex-basis: 25%;
-  // width: 25%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: 100%;
+  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px * 2) / 2);
+    flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
+    flex-wrap: wrap;
   }
-
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-left: 30px;
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 .heading-team {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
   margin-bottom: 50px;
 }
 
@@ -39,20 +44,18 @@
 .item-job {
   margin-bottom: 16px;
 }
-.heading-team {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
+
 .team-members {
-  display: flex;
   text-align: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    text-align: center;
+    margin-left: -30px;
+  }
 }
+
 .team-section {
   /* Section bg */
   background: #f5f4fa;
@@ -77,20 +80,3 @@
 }
 
 /* ==================END OF STUDIO================= */
-// @media screen and (min-width: 768px) {
-//   // .our-team {
-//   //   display: block;
-//   // }
-//   .team-item {
-//     flex-basis: 50%;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   // .our-team {
-//   //   display: block;
-//   // }
-//   .team-item {
-//     flex-basis: 100%;
-//   }
-// }
