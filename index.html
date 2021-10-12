@@ -21,7 +21,7 @@
   </head>
   
     <!-- Header -->
-    <header class="header">
+     <header class="header">
       <div class="container header-container">
         <nav class="site-nav">
           <a href="./index.html" lang="en" class="logo">
@@ -59,25 +59,19 @@
             </a>
           </li>
         </ul>
-        <div class="header-burder-menu" >
-                <a class="header-burger-logo" href="#">
-                    <p lang="en" class="logo-title">
-                        Web
-                        <span class="logo-title-black">
-                            Studio
-                        </span>
-                    </p>
-                </a>
-                <div class="header-btn-container">
-                    <buttton class="header-burger-btn">
-                            <svg class="header-burger-icon">
-                                <use href="./images/sprite.svg#burger-icon"></use>
-                            </svg>
-                    </buttton>
-                </div>
-            </div>
+
+        <div class="menu">
+          <button type="button" class="menu-button is-open"><svg class="opn-btn" height="40" width="40"><use href="./images/sprite.svg#burger-icon.svg"class="icon-menu">
+            
+          </use></svg >
+            <svg class="cls-btn" height="40" width="40"><use href="./images/sprite.svg#icon-close.svg" class="icon-cross" ></use></svg></button>
+          <div class="menu-nav"></div>
+          <div class="menu-contacts"></div>
+          
+        </div>
+      
       </div>
-    </header>
+    </header> 
     <main>
       <!-- HERO -->
       <section class="hero">
@@ -146,36 +140,69 @@
           <h2 class="what-we-do">Чем мы занимаемся</h2>
           <ul class="our-job">
             <li class="our-job-item list">
-              <img
-                class="img-1"
-                src="./images/img-1.jpg"
-                alt="Печатает на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                          
+                            <source
+                                srcset="./images/tech/jpg/wedo1.jpg 1x , ./images/tech/jpg/wedo1x2.jpg 2x "
+                                media="(min-width: 1200px)" type="image/jpeg">
+                            
+
+                          
+                            <source
+                                srcset="./images/tech/jpg/wedo1.jpg 1x, ./images/tech/jpg/wedo1x2.jpg 2x "
+                                media="(min-width: 768px)" type="image/jpeg">
+
+                            <source
+                                srcset="./images/tech/jpg/wedo1.jpg 1x, ./images/tech/jpg/wedo1x2.jpg 2x "
+                                media="(max-width: 767px)" type="image/jpeg">
+
+                            <img src="./images/tech/jpg/wedo1.jpg" alt="Ольга Репина" />
+                        </picture>
                
               <p class="text-overlay">Десктопные приложения</p>
             </li>
 
             <li class="our-job-item list">
-              <img
-                class="img-2"
-                src="./images/img-2.jpg"
-                alt="Ноутбук и планшет"
-                width="370"
-                height="294"
-              />
+             <picture>
+                          
+                            <source
+                                srcset="./images/tech/jpg/wedo2.jpg 1x , ./images/tech/jpg/wedo2x2.jpg 2x "
+                                media="(min-width: 1200px)" type="image/jpeg">
+                            
+
+                          
+                            <source
+                                srcset="./images/tech/jpg/wedo2.jpg 1x, ./images/tech/jpg/wedo2x2.jpg 2x "
+                                media="(min-width: 768px)" type="image/jpeg">
+
+                            <source
+                                srcset="./images/tech/jpg/wedo2.jpg 1x, ./images/tech/jpg/wedo2x2.jpg 2x "
+                                media="(max-width: 767px)" type="image/jpeg">
+
+                            <img src="./images/tech/jpg/wedo2.jpg" alt="Ольга Репина" />
+                        </picture>
               <p class="text-overlay">Мобильные приложения</p>
             </li>
 
             <li class="our-job-item list">
-              <img
-                class="img-3"
-                src="./images/img-3.jpg"
-                alt="Планшет и цветовая форма"
-                width="370"
-                height="294"
-              />
+            <picture>
+                          
+                            <source
+                                srcset="./images/tech/jpg/wedo3.jpg 1x , ./images/tech/jpg/wedo3x2.jpg 2x "
+                                media="(min-width: 1200px)" type="image/jpeg">
+                            
+
+                          
+                            <source
+                                srcset="./images/tech/jpg/wedo3.jpg 1x, ./images/tech/jpg/wedo3x2.jpg2x "
+                                media="(min-width: 768px)" type="image/jpeg">
+
+                            <source
+                                srcset="./images/tech/jpg/wedo3.jpg 1x, ./images/tech/jpg/wedo3x2.jpg 2x "
+                                media="(max-width: 767px)" type="image/jpeg">
+
+                            <img src="./images/tech/jpg/wedo3.jpg" alt="Ольга Репина" />
+                        </picture>
               <p class="text-overlay">Дизайнерские решения</p>
             </li>
           </ul>
@@ -527,8 +554,8 @@
        <form class="subscribe-form">
 
       <p class="subscribe-text">Подпишитесь на рассылку</p>
-
- <input type="email" name="your-email" placeholder="E-mail" class="email-subscription">
+<label for="#" class="subscribe-field">
+ <input type="email" name="your-email" placeholder="E-mail" class="email-subscription"></label>
 
  
    
@@ -599,35 +626,7 @@
             </form>
     </div>  
 
-   <div class="burger-menu burger-menu-hidden">
-        <button class="burger-menu-btn" type="button">
-            <svg class="burger-menu-icon">
-                <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-        </button>
-        <ul class="burger-menu-list list">
-            <li class="burger-menu-item">
-                <a class="burger-menu-link" href="index.html">Студия</a>
-            </li>
-            <li class="burger-menu-item">
-                <a class="burger-menu-link" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="burger-menu-item">
-                <a class="burger-menu-link" href="#">Контакты</a>
-            </li>
-        </ul>
-        <div class="burger-menu-footer">
-            <ul class="burger-menu-address list">
-                <li class="burger-menu-item">
-                    <a class="burger-menu-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="burger-menu-item">
-                    <a class="burger-menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
-            
-        </div>
-    </div>
+  
   </div>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>

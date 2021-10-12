@@ -2,6 +2,7 @@
   padding-top: 47px;
 }
 .title-footer {
+  // margin-left: 30px;
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -10,8 +11,11 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 }
 .item-title {
   font-family: Roboto;

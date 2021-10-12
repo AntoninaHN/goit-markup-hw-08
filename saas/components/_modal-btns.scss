@@ -23,7 +23,7 @@
 //END HERO BTN
 //FOOTER BUTTON
 .submit-text-btn {
-  display: flex;
+  display: inline-flex;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -43,6 +43,7 @@
 .btn-footer {
   display: inline-block;
   align-items: center;
+  justify-content: center;
 }
 .submit-text-btn:hover,
 .submit-text-btn:focus {
@@ -89,6 +90,12 @@
   background-color: #f5f4fa;
   border-radius: 4px;
   transition: background-color 250ms var(--timing-function);
+  @media screen and (max-width: 1199px) {
+    margin: 20px auto 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+  }
 }
 .modal-button:hover,
 .modal-button:focus {
