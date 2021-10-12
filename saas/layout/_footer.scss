@@ -1,6 +1,8 @@
 /* ==============FOOTER============= */
 footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -21,7 +23,7 @@ footer {
   /* WebStudio */
   color: var(--accent-color);
   text-decoration: none;
-  font-style: normal;
+  font-style: 400;
 }
 
 .address {
@@ -67,6 +69,5 @@ footer {
 .footer-container {
   display: flex;
   align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  justify-content: space-between;
 }

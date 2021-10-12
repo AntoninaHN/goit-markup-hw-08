@@ -5,6 +5,7 @@
   margin-left: -30px;
   background: #f5f4fa;
 }
+//LI
 .team-item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -18,7 +19,6 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
-    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
@@ -44,13 +44,14 @@
 .item-job {
   margin-bottom: 16px;
 }
-
+//UL
 .team-members {
   text-align: center;
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     margin-left: -30px;
   }
@@ -60,6 +61,7 @@
   /* Section bg */
   background: #f5f4fa;
 }
+
 .item-name {
   font-family: Roboto;
   font-weight: 500;
