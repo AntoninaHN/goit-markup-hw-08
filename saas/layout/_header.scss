@@ -116,3 +116,79 @@
 .contact-link:focus .contact-icon {
   fill: var(--accent-color);
 }
+
+.header {
+  padding-top: 40px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 0 - 767
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+
+  .contact-link {
+    display: none;
+  }
+
+  .open-menu-btn,
+  .mobile-menu-close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .mobile-menu-close-btn {
+    position: absolute;
+    top: 48px;
+    right: 15px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+    max-height: 796px;
+    overflow-y: scroll;
+    transform: translateY(-100%);
+    // opacity: 0;
+    // visibility: hidden;
+    // pointer-events: none;
+    transition: transform 500ms linear;
+  }
+
+  .mobile-menu.is-open {
+    transform: translateY(0%);
+    // opacity: 1;
+    // visibility: visible;
+    // pointer-events: auto;
+  }
+
+  .mobile-menu-container {
+    position: relative;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 41px;
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .open-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}

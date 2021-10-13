@@ -241,6 +241,40 @@ a {
   fill: #ffffff;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 96vw;
+  max-width: 450px;
+  height: 100vh;
+  max-height: 610px;
+  overflow-y: scroll;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 580px;
+  }
+}
+
 .what-we-do-title {
   padding-top: 47px;
 }
@@ -619,18 +653,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-width: 1200px) {
-  .footer-subscribe {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) {
-  .footer-subscribe {
-    display: block;
-  }
-}
-
 .subscribe-text {
   margin-bottom: 20px;
   font-family: Roboto;
@@ -681,28 +703,23 @@ text {
 
 @media screen and (min-width: 1200px) {
   .subscribe-form {
-    display: flex;
+    display: block;
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-form {
-    display: block;
-    flex-direction: row;
-    align-items: baseline;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .submit-text-btn {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .submit-text-btn {
-    margin-top: 20px;
-  }
+.submit-text-btn {
+  margin-top: 20px;
 }
 
 /* ===============HERO=============== */
@@ -1118,16 +1135,6 @@ text {
 @media screen and (max-width: 1199px) {
   .footer {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    display: flex;
-    align-items: baseline;
-    padding: 0 15px;
-    margin: 0 auto;
-    max-width: 1200px;
   }
 }
 
