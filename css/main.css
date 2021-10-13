@@ -720,6 +720,18 @@ text {
   font-weight: 700;
 }
 
+@media screen and (max-width: 767px) {
+  .logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -837,7 +849,7 @@ text {
   }
   .open-menu-btn {
     display: flex;
-    justify-content: flex-end;
+    padding: 12px 8px 25px 8px;
   }
   .open-menu-btn,
   .mobile-menu-close-btn {
@@ -999,13 +1011,25 @@ text {
   color: var(--accent-color);
 }
 
-.mobile-menu-social-links:not(:first-child) {
-  margin-left: 20px;
+.mobile-menu-social-links-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  transform: border rotate(90deg);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.burger-btn-icon {
-  margin-left: 450px;
-  margin-bottom: 22px;
+.mobile-menu-social-links {
+  margin-right: 10px;
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+  fill: var(--accent-color);
+}
+
+.open-menu-btn:hover,
+.open-menu-btn:focus {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1017,25 +1041,9 @@ text {
   .contact-list-item:first-child {
     margin-bottom: 10px;
   }
-  .contact-link {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--primary-text-color);
-    transition: var(--timing-function);
-  }
-  .contact-link:hover, .contact-link:focus {
-    color: var(--accent-color);
-    cursor: pointer;
-    fill: var(--accent-color);
-  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .site-nav {
     display: flex;
     align-items: center;
