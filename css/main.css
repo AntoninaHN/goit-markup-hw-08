@@ -395,9 +395,19 @@ a {
 
 /*============== MODAL FORM ==============*/
 .modal {
-  display: flex;
-  flex-direction: column;
-  appearance: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  max-height: 609px;
+  width: 96vw;
+  height: 96vw;
+  overflow: auto;
+  padding: 40px;
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -410,17 +420,6 @@ a {
   .modal {
     max-width: 528px;
     max-height: 581px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-height: 96vh;
-    max-width: 96vw;
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -663,7 +662,6 @@ text {
   flex: block;
   flex-direction: row;
   align-items: baseline;
-  margin-bottom: 60px;
   flex-grow: 1;
 }
 
@@ -784,6 +782,13 @@ text {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: inline;
+    padding: 0;
+  }
+}
+
 .contact-list {
   /* info@devstudio.com */
   /* +38 096 111 11 11 */
@@ -806,6 +811,14 @@ text {
   transition: color 250ms var(--timing-function);
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-link {
+    padding: 0;
+    margin-left: 84px;
+    margin-bottom: 10px;
+  }
 }
 
 .contact-icon {
@@ -1035,11 +1048,21 @@ text {
 @media screen and (min-width: 768px) {
   .icon-envelope,
   .icon-smartphone {
-    margin-right: 10px;
     fill: currentColor;
   }
-  .contact-list-item:first-child {
-    margin-bottom: 10px;
+  .contact-link {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: var(--timing-function);
+  }
+  .contact-link:hover, .contact-link:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+    fill: var(--accent-color);
   }
 }
 
@@ -1076,7 +1099,7 @@ text {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   .hero-text {
     font-size: 26px;
     line-height: 1.62;
@@ -1469,6 +1492,7 @@ text {
 
 /* ==============FOOTER============= */
 .footer {
+  padding-bottom: 60px;
   background: #2f303a;
   padding-top: 60px;
 }
@@ -1609,10 +1633,6 @@ text {
     align-items: baseline;
     flex-basis: calc((100% - 30px) / 2);
   }
-}
-
-.footer-address {
-  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 767px) {
