@@ -9,11 +9,6 @@
   display: flex;
   align-items: center;
 }
-// 0 - 767
-// @media screen and (max-width: 767px) {
-//   .menu {
-//     display: none;
-//   }
 .logo {
   padding-top: 24px;
   margin-right: 93px;
@@ -46,6 +41,7 @@
   display: flex;
   align-items: center;
 }
+
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -101,21 +97,28 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
-}
-/* .envelope-icon {
-  margin-right: 10px;
-  fill: currentColor;
-} */
-.contact-link {
-  display: flex;
-  align-items: center;
-  transition: color 250ms var(--timing-function);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  @media screen and (min-width: 768px) {
-    padding: 0;
-    margin-left: 84px;
-    margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+  .contact-link {
+    display: flex;
+    align-items: center;
+    transition: color 250ms var(--timing-function);
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+      margin-left: 84px;
+      margin-bottom: 10px;
+    }
+
+    transition: color 250ms var(--timing-function);
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
   }
 }
 .contact-icon {
@@ -140,12 +143,6 @@
   padding-top: 40px;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 // 0 - 767
 @media screen and (max-width: 767px) {
   .site-nav {
@@ -157,7 +154,6 @@
   }
   .open-menu-btn {
     display: flex;
-    // justify-content: flex-end;
     padding: 12px 8px 25px 8px;
   }
   .open-menu-btn,
@@ -213,13 +209,6 @@
   .mobile-menu {
     display: none;
   }
-}
-
-//MENU
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 // 0 - 767
@@ -397,7 +386,6 @@
   @media screen and (min-width: 1200px) {
     .site-nav {
       display: flex;
-      align-items: center;
     }
 
     .contact-list-item {
@@ -411,9 +399,9 @@
       line-height: 1.1;
     }
 
-    .contact-list-item {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
+    // .contact-list-item {
+    //   padding-top: 32px;
+    //   padding-bottom: 32px;
+    // }
   }
 }
